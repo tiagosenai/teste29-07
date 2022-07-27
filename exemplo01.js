@@ -5,6 +5,8 @@ var nota1, nota2, nota3, media;
 //digitados no teclado
 var entrada = require('readline-sync');
 
+for (contador=1; contador<=3; contador++){
+    console.log("Cálculo da Média do "+contador+"º aluno");
 //Solicitando e pegando as notas
 //OBS: parseFloat faz a conversão de um tipo texto para numérico(Float)
 nota1 = parseFloat(entrada.question("Informe a Primeira Nota..: "));
@@ -21,3 +23,4 @@ if (media >= 7)
     console.log("APROVADOOOOO!");
 else
     console.log("Reprovado");
+}
