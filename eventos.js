@@ -7,9 +7,11 @@ var entrada = require('readline-sync');
 console.log("Cadastro de Eventos");
 opcao = 's';
 while (opcao == 's'){
-    data = entrada.question("Informe a Data do Evento - Ex: 08/08/2022 ...: ");
+    data = entrada.question("Data do Evento ...: ");
+    //Gravando informação no array
     dataevento.push(data);
-    evento = entrada.question("Informe o Nome do Evento - Ex: Carnaval ...: ");
+    evento = entrada.question("Nome do Evento ...: ");
+    //Gravando informação no array
     eventos.push(evento);
     opcao = entrada.question("Deseja Continuar..: s/n..: ");
 }
