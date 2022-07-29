@@ -16,7 +16,11 @@ while (opcao == 's'){
     opcao = entrada.question("Deseja Continuar..: s/n..: ");
 }
 
-console.log("Programa Encerrado!!!")
+qtdeEventos = eventos.length;
+
+console.log("Programa Encerrado!!!\n");
+
+console.log(qtdeEventos+" Eventos Cadastrados");
 
 for (let index = 0; index < dataevento.length; index++) {
     console.log("Data..: "+dataevento[index] + " - Nome..: "+eventos[index]);
